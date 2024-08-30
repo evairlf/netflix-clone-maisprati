@@ -1,0 +1,78 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+/* Footer */
+footer {
+    border-top: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
+    color: #fff;
+    padding: 1rem 0; /* Adicione algum padding para o footer */
+    font-family: "Roboto", sans-serif;
+}
+
+/* ContainerFooter */
+.container-footer {
+    padding: 0 3rem;
+    margin: 4.5rem 0;
+}
+
+/* FooterWrapper */
+.footer-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* NavFooter */
+.nav-footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100% + 0.75rem);
+}
+
+/* Teste */
+
+.teste {
+    align-items: center;
+}
+
+/* NavLi */
+.nav-li {
+    flex: 0 0 calc(25% - 0.75rem);
+}
+
+/* NavFooterLink */
+.nav-footer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-footer-link:hover {
+    color: #ff0000;
+}
+
+.copryght{
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: end;
+}
+
+.copryght a{
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    .nav-footer {
+        display: inline-flex;
+        text-transform: uppercase;
+        flex-direction: column;
+        width: calc(100% + 0.75rem);
+    }
+    .copryght{
+        margin-top: 3rem;
+        text-align: center;
+    }
+  }

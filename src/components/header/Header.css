@@ -1,0 +1,71 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.7s;
+}
+
+header.black {
+    background-color: #141414;
+}
+
+.header--logo {
+    height: 3rem;
+    text-shadow: 5px 5px #558abb;
+}
+
+.header--logo img {
+    height: 100%;
+}
+
+.header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header--search {
+    position: relative;
+    margin-right: 20px; /* Espaço entre a barra de pesquisa e o ícone do usuário */
+}
+
+.search-bar {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0.5rem;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 150px; /* Largura padrão */
+    transition: width 0.3s ease;
+}
+
+.search-bar:focus {
+    width: 200px; /* Largura expandida quando focada */
+}
+
+.header--user {
+    height: 3rem;
+}
+
+.header--user img {
+    height: 100%;
+    border-radius: 3px;
+}
+
+
+@media (max-width: 601px) {
+    .responsive--img {
+        content: url('../../assets/netflix-simplified-logo.svg');
+    }
+    .header--search{
+        margin-right: 2.5rem;
+    }
+}
