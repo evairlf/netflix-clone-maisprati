@@ -1,67 +1,100 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+}
+
+footer {
+    border-top: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    padding: 2rem 0;
+    width: 100%;
+    /* Ajuste a altura do footer conforme necessário */
+    height: auto;
+    box-sizing: border-box;
+}
+
 /* Footer.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
 
 /* Footer */
 footer {
-    border-top: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
-    color: #fff;
-    padding: 1rem 0; /* Adicione algum padding para o footer */
-    font-family: "Roboto", sans-serif;
+    /* Os estilos para o footer serão aplicados aqui */
 }
 
 /* ContainerFooter */
 .container-footer {
     padding: 0 3rem;
-    margin: 4.5rem 0;
+    margin: 0; /* Remova a margem superior e inferior para que o footer se ajuste corretamente */
 }
 
 /* FooterWrapper */
 .footer-wrapper {
     width: 100%;
     box-sizing: border-box;
-    height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em várias linhas, se necessário */
 }
 
 /* NavFooter */
 .nav-footer {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: calc(100% + 0.75rem);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Teste */
-
-.teste {
+.call {
     align-items: center;
 }
 
 /* NavLi */
 .nav-li {
-    flex: 0 0 calc(25% - 0.75rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* NavFooterLink */
 .nav-footer-link {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .nav-footer-link:hover {
     color: #ff0000;
 }
 
-.copryght{
+.copryght {
     justify-content: center;
     margin-top: 3rem;
-    text-align: end;
+    text-align: center; /* Centraliza o texto */
 }
 
-.copryght a{
+.copryght a {
+    color: blueviolet;
     text-decoration: none;
+}
+
+.copryght a:visited {
+    color: #d60a0abe;
+    text-decoration: none;
+}
+
+.horizontal-row {
+    opacity: 0;
 }
 
 @media (max-width: 760px) {
@@ -71,8 +104,14 @@ footer {
         flex-direction: column;
         width: calc(100% + 0.75rem);
     }
-    .copryght{
+    .horizontal-row {
+        opacity: 1;
+    }
+    .footer-wrapper ul > li > a {
+        font-size: 14px;
+    }
+    .copryght {
         margin-top: 3rem;
         text-align: center;
     }
-  }
+}

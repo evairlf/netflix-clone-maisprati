@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
-import simplifiedlogo from "../../assets/netflix-simplified-logo.svg";
 import user from "../../assets/user-netflix.jpg"
 import "../header/Header.css"
 import SearchBar from "../searchBar/SearchBar";

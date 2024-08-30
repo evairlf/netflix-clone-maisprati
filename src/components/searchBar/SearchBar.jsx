@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Tmdb from '../../../Tmdb';
-import "../searchBar/SearchBar.css"
 
 const SearchBar = ({ onResponse }) => {
     const [query, setQuery] = useState('');
