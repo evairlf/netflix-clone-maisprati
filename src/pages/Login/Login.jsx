@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Header, Logo } from "./Header-login";
-import bg from "../assets/bg.jpg";
-import logo from "../assets/logo.png";
+import bg from "../../assets/bg.jpg";
+import logo from "../../assets/logo.png";
+import Footeer from "../../components/footer/Footer";
 
 const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.7);
@@ -186,6 +187,15 @@ const NavFooterLink = styled.a`
 `
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      
+      if (e.target.checkValidity()) {
+        navigate('/home');
+      }
+    };
 
     return (
         <AppContainer>
@@ -195,13 +205,13 @@ const Login = () => {
                 </Header>
                 <Container>
                     <Title>Entrar</Title>
-                    <Form>
-                        <Input type="text" placeholder="Email ou número de celular"/>
-                        <Input type="password" placeholder="Senha"/>
+                    <Form onSubmit={handleSubmit}>
+                        <Input type="text" placeholder="Email ou número de celular" required/>
+                        <Input type="password" placeholder="Senha" required/>
                         <Button type="submit">Entrar</Button>
                         <Text>OU</Text>
                         <ButtonSignIn>Usar um código de acesso</ButtonSignIn>
-                        <TextLink to="#">Esqueceu a senha?</TextLink>
+                        <TextLink to="/home">Esqueceu a senha?</TextLink>
                     </Form>
                     <ContainerCheckbox>
                         <Checkbox/>
@@ -210,23 +220,9 @@ const Login = () => {
                     <TextSubscribreNow>Novo por aqui? <SpanLink><b>Assine agora.</b></SpanLink></TextSubscribreNow>
                     <TextProtect>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <SpanMore>Saiba mais</SpanMore>.</TextProtect>
                 </Container>
+                <Footeer/>
             </BackgroundOpacity>
-            <ContainerFooter>
-                <Footer>
-                    <FooterWrapper>
-                        <Teste>Dúvidas? Ligue 0800 591 2876</Teste>
-                        <NavFooter>
-                            <NavLi><NavFooterLink href="#">Perguntas Frequentes</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Central de Ajuda</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Termos de Uso</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Privacidade</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Preferência de cookies</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Perguntas Frequentes</NavFooterLink></NavLi>
-                            <NavLi><NavFooterLink href="#">Informações corporativas</NavFooterLink></NavLi>
-                        </NavFooter>
-                    </FooterWrapper>
-                </Footer>
-            </ContainerFooter>
+            
         </AppContainer>
         
     );

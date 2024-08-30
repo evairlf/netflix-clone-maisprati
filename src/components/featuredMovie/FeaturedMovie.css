@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    padding-bottom: 8rem;
+    padding-bottom: 13rem;
     padding-top: 8rem;
     background: linear-gradient(to right, #111 30%, transparent 70%);
 }
@@ -92,7 +92,7 @@
     color: #999;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 940px) {
     .featured {
         height: 90vh;
     }

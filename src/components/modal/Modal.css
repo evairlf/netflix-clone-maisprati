@@ -1,3 +1,7 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -17,6 +21,8 @@
     padding: 20px;
     border-radius: 5px;
     width: 80%;
+    max-height: 80%;
+    overflow: auto;
     position: relative;
 }
 
@@ -28,9 +34,6 @@
     font-size: 24px;
 }
 
-h2{
-    text-align: center;
-}
 
 .modal--description {
     display: flex;
@@ -63,9 +66,4 @@ h2{
 .info--movie p:last-child {
     overflow: auto;
     margin-right: 0;
-}
-
-.movie--overview {
-    color: blueviolet;
-overflow: auto;
 }

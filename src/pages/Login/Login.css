@@ -1,0 +1,205 @@
+/* Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    padding: 48px 68px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Title */
+.title {
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Input */
+.input {
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border: solid 1px;
+    border-color: rgba(128, 128, 128, 0.7);
+}
+
+/* Button */
+.button {
+    color: #fff;
+    background-color: #ff0000;
+    padding: 0.375rem 1rem;
+    min-height: 2.5rem;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: calc(0.25rem - 0.0625rem);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+    background-color: #b11b1b;
+}
+
+/* Button Sign In */
+.button-sign-in {
+    background: rgba(128, 128, 128, 0.4);
+    font-weight: 500;
+}
+
+.button-sign-in:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* Text */
+.text {
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Text Link */
+.text-link {
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Container Checkbox */
+.container-checkbox {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+/* Checkbox */
+.checkbox {
+    border-radius: 0.125rem;
+    height: 1.125rem;
+    width: 1.125rem;
+    border-width: 0.0625rem;
+    border-color: rgba(128, 128, 128, 0.7);
+}
+
+.checkbox:before {
+    background: #000;
+}
+
+/* Label */
+.label {
+    color: #fff;
+    padding-left: 0.75rem;
+    margin-top: 16px;
+}
+
+/* Text Subscribe Now */
+.text-subscribe-now {
+    color: #fff;
+    text-align: start;
+    margin-top: 16px;
+}
+
+/* Span Link */
+.span-link {
+    color: #fff;
+    cursor: pointer;
+    text-align: start;
+}
+
+.span-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Text Protect */
+.text-protect {
+    text-align: start;
+    margin-top: 16px;
+}
+
+/* Span More */
+.span-more {
+    color: #0071eb;
+}
+
+.span-more:hover {
+    text-decoration: underline;
+    color: #0071eb;
+}
+
+/* App Container */
+.app-container {
+    background-color: #000;
+    background: url(bg.jpg); /* Substitua por seu caminho de imagem */
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background Opacity */
+.background-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+
+/* Footer */
+.footer {
+    border-top: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
+    color: #fff;
+}
+
+/* Container Footer */
+.container-footer {
+    padding: 0 3rem 0 3rem;
+    margin: 4.5rem 0 4.5rem 0;
+}
+
+/* Footer Wrapper */
+.footer-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Nav Footer */
+.nav-footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100% + 0.75rem);
+}
+
+/* Teste */
+.teste {
+    flex: 0 0 100%;
+}
+
+/* Nav Li */
+.nav-li {
+    flex: 0 0 calc(25% - 0.75rem);
+}
+
+/* Nav Footer Link */
+.nav-footer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-footer-link:hover {
+    color: #ff0000;
+}
