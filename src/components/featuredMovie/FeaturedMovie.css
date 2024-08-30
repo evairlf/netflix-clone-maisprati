@@ -92,7 +92,7 @@
     color: #999;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1000px) {
     .featured {
         height: 90vh;
     }
