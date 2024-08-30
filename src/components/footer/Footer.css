@@ -1,4 +1,4 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
 html, body {
     height: 100%;
     margin: 0;
@@ -7,7 +7,7 @@ html, body {
 }
 
 .main-content {
-    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+    flex: 1; 
 }
 
 footer {
@@ -17,23 +17,14 @@ footer {
     font-family: "Roboto", sans-serif;
     padding: 2rem 0;
     width: 100%;
-    /* Ajuste a altura do footer conforme necessário */
+
     height: auto;
     box-sizing: border-box;
 }
 
-/* Footer.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
-
-/* Footer */
-footer {
-    /* Os estilos para o footer serão aplicados aqui */
-}
-
-/* ContainerFooter */
 .container-footer {
     padding: 0 3rem;
-    margin: 0; /* Remova a margem superior e inferior para que o footer se ajuste corretamente */
+    margin: 0; 
 }
 
 /* FooterWrapper */
@@ -42,7 +33,7 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em várias linhas, se necessário */
+    flex-wrap: wrap; 
 }
 
 /* NavFooter */
@@ -55,19 +46,19 @@ footer {
     margin: 0;
 }
 
-/* Teste */
+
 .call {
     align-items: center;
 }
 
-/* NavLi */
+
 .nav-li {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* NavFooterLink */
+
 .nav-footer-link {
     text-decoration: none;
     color: #000;
@@ -80,7 +71,7 @@ footer {
 .copryght {
     justify-content: center;
     margin-top: 3rem;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
 }
 
 .copryght a {

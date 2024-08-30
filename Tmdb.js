@@ -1,11 +1,7 @@
-import { scryRenderedComponentsWithType } from "react-dom/test-utils";
-
 const API_KEY = 'e575fee99ef43d31d36b278d002a9290';
 const API_BASE = 'https://api.themoviedb.org/3';
 const API_URL = `https://api.themoviedb.org/3/search/tv?api_key=`;
-const API_URL_SEARCH = 'https://api.themoviedb.org/3/search/multi?api_key=';
 //${API_KEY}&query=${query}
-
 
 const basicFecht = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`);

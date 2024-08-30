@@ -4,7 +4,6 @@ import '../searched/Searched.css';
 
 export default ({ title, items }) => {
 
-    //modal
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 

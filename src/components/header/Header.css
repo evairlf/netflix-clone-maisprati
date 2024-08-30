@@ -33,7 +33,7 @@ header.black {
 
 .header--search {
     position: relative;
-    margin-right: 20px; /* Espaço entre a barra de pesquisa e o ícone do usuário */
+    margin-right: 20px; 
 }
 
 .search-bar {
@@ -43,12 +43,12 @@ header.black {
     background: transparent;
     color: white;
     outline: none;
-    width: 150px; /* Largura padrão */
+    width: 150px; 
     transition: width 0.3s ease;
 }
 
 .search-bar:focus {
-    width: 200px; /* Largura expandida quando focada */
+    width: 200px; 
 }
 
 .header--user {

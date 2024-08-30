@@ -4,7 +4,6 @@
 font-family: "Roboto", sans-serif;
 }
 
-/* Container */
 .container {
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -18,20 +17,17 @@ font-family: "Roboto", sans-serif;
     margin-bottom: 2rem;
 }
 
-/* Title */
 .title {
     color: #fff;
     margin-bottom: 28px;
 }
 
-/* Form */
 .form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* Input */
 .input {
     color: #fff;
     line-height: 1.5;
@@ -42,7 +38,6 @@ font-family: "Roboto", sans-serif;
     border-color: rgba(128, 128, 128, 0.7);
 }
 
-/* Button */
 .button {
     color: #fff;
     background-color: #ff0000;
@@ -58,7 +53,6 @@ font-family: "Roboto", sans-serif;
     background-color: #b11b1b;
 }
 
-/* Button Sign In */
 .button-sign-in {
     background: rgba(128, 128, 128, 0.4);
     font-weight: 500;
@@ -76,14 +70,12 @@ font-family: "Roboto", sans-serif;
     background-color: rgba(128, 128, 128, 0.2);
 }
 
-/* Text */
 .text {
     font-size: 1rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Text Link */
 .text-link {
     color: #fff;
     cursor: pointer;
@@ -95,15 +87,13 @@ font-family: "Roboto", sans-serif;
     color: #fff;
 }
 
-/* Container Checkbox */
 .container-checkbox {
     margin-top: 16px;
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens ao centro */
+    align-items: center; 
     cursor: pointer;
 }
 
-/* Checkbox */
 .checkbox {
     border-radius: 0.125rem;
     height: 1.125rem;
@@ -117,7 +107,6 @@ font-family: "Roboto", sans-serif;
     background: #000;
 }
 
-/* Label */
 .label {
     color: #fff;
     padding-left: 0.75rem;
@@ -125,7 +114,6 @@ font-family: "Roboto", sans-serif;
     margin-bottom: 1rem;
 }
 
-/* Text Subscribe Now */
 .text-subscribe-now {
     color: #fff;
     display: flex;
@@ -134,7 +122,6 @@ font-family: "Roboto", sans-serif;
     gap: 0.6rem;
 }
 
-/* Span Link */
 .span-link {
     color: #fff;
     cursor: pointer;
@@ -146,13 +133,11 @@ font-family: "Roboto", sans-serif;
     color: #fff;
 }
 
-/* Text Protect */
 .text-protect {
     text-align: start;
     margin-top: 16px;
 }
 
-/* Span More */
 .span-more {
     color: #0071eb;
 }
@@ -162,35 +147,30 @@ font-family: "Roboto", sans-serif;
     color: #0071eb;
 }
 
-/* App Container */
 .app-container {
     background-color: #000;
-    background: url("../../assets/bg.jpg"); /* Substitua por seu caminho de imagem */
+    background: url("../../assets/bg.jpg"); 
     width: 100%;
     height: 100vh;
 }
 
-/* Background Opacity */
 .background-opacity {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
 }
 
-/* Footer */
 .footer {
     border-top: none;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgb(0, 0, 0) 20%);
     color: #fff;
 }
 
-/* Container Footer */
 .container-footer {
     padding: 0 3rem 0 3rem;
     margin: 4.5rem 0 4.5rem 0;
 }
 
-/* Footer Wrapper */
 .footer-wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -199,7 +179,6 @@ font-family: "Roboto", sans-serif;
     flex-direction: row;
 }
 
-/* Nav Footer */
 .nav-footer {
     display: inline-flex;
     flex-wrap: wrap;
@@ -207,17 +186,14 @@ font-family: "Roboto", sans-serif;
     width: calc(100% + 0.75rem);
 }
 
-/* Teste */
 .teste {
     flex: 0 0 100%;
 }
 
-/* Nav Li */
 .nav-li {
     flex: 0 0 calc(25% - 0.75rem);
 }
 
-/* Nav Footer Link */
 .nav-footer-link {
     text-decoration: none;
     color: #fff;
